@@ -1,6 +1,10 @@
 {
   "extends": [
-    "config:recommended"
+    "config:recommended",
+    ":dependencyDashboard",
+    ":semanticCommits",
+    ":timezone(America/New_York)",
+    "abandonments:recommended"
   ],
   "baseBranches": ["main"],
   "rebaseWhen": "conflicted",
