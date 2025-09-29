@@ -7,8 +7,7 @@
     "abandonments:recommended",
     "mergeConfidence:all-badges",
     "docker:enableMajor",
-    "helpers:pinGitHubActionDigests",
-    ":automergeBranch"
+    "helpers:pinGitHubActionDigests"
   ],
   "dependencyDashboardTitle": "Renovate Dashboard 🤖",
   "baseBranches": ["main"],
@@ -20,6 +19,11 @@
     "dependencyDashboardApproval": true
   },
   "packageRules": [
+   {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true
+   },
    {
       "matchManagers": ["dockerfile"],
       "matchPackagePatterns": ["alpine"],
