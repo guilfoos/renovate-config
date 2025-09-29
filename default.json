@@ -14,7 +14,7 @@
   "prHourlyLimit": 2,
   "major": {
     "dependencyDashboardApproval": true
-  }
+  },
   "packageRules": [
    {
       "matchManagers": ["dockerfile"],
