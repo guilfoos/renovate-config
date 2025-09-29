@@ -4,8 +4,13 @@
     ":dependencyDashboard",
     ":semanticCommits",
     ":timezone(America/New_York)",
-    "abandonments:recommended"
+    "abandonments:recommended",
+    "mergeConfidence:all-badges",
+    "docker:enableMajor",
+    "helpers:pinGitHubActionDigests",
+    ":automergeBranch"
   ],
+  "dependencyDashboardTitle": "Renovate Dashboard 🤖",
   "baseBranches": ["main"],
   "rebaseWhen": "conflicted",
   "labels": ["dependencies"],
