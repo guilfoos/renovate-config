@@ -4,6 +4,7 @@
   "labels": ["dependencies"],
   "automergeStrategy": "merge-commit",
   "ignoreTests": true,
+  "prHourlyLimit": 2,
   "packageRules": [
    {
       "matchManagers": ["dockerfile"],
