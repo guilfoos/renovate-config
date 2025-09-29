@@ -16,7 +16,6 @@
   "labels": ["dependencies"],
   "automergeStrategy": "merge-commit",
   "ignoreTests": true,
-  "prHourlyLimit": 2,
   "major": {
     "dependencyDashboardApproval": true
   },
