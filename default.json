@@ -1,4 +1,7 @@
 {
+  "extends": [
+    "config:recommended"
+  ],
   "baseBranches": ["main"],
   "rebaseWhen": "conflicted",
   "labels": ["dependencies"],
