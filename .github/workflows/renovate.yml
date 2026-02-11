@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
       # Don't waste time starting Renovate if JSON is invalid
       - name: Validate Renovate JSON
-        run: jq type default.json
+        run: jq type .github/renovate.json
       - name: Get token
         uses: actions/create-github-app-token@v2
         id: get_token
@@ -45,5 +45,5 @@ jobs:
           RENOVATE_FORCE: ${{ github.event.inputs.overrideSchedule == 'true' && '{''schedule'':null}' || '' }}
           LOG_LEVEL: ${{ inputs.logLevel || 'info' }}
         with:
-          configurationFile: default.json
+          configurationFile: .github/renovate.json
           token: '${{ steps.get_token.outputs.token }}'
